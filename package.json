@@ -1,0 +1,36 @@
+{
+  "name": "pixijs-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --colors --inline --hot --mode development",
+    "build": "webpack"
+  },
+  "author": "",
+  "private": true,
+  "license": "ISC",
+  "dependencies": {
+    "pixi.js": "^4.8.5",
+    "@tweenjs/tween.js": "^17.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/pixi.js": "^4.8.6",
+    "@types/tween.js": "^16.9.0",
+    "@types/webpack-env": "^1.13.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "tslint": "^5.12.1",
+    "tslint-react": "^3.6.0",
+    "typesafe-actions": "^3.0.0",
+    "typescript": "^3.2.4",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
