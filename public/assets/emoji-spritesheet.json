@@ -1,0 +1,1527 @@
+{"frames": {
+
+"emoji-spritesheet-0.png":
+{
+	"frame": {"x":0,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-1.png":
+{
+	"frame": {"x":0,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-2.png":
+{
+	"frame": {"x":270,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-3.png":
+{
+	"frame": {"x":324,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-4.png":
+{
+	"frame": {"x":324,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-5.png":
+{
+	"frame": {"x":378,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-6.png":
+{
+	"frame": {"x":432,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-7.png":
+{
+	"frame": {"x":432,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-8.png":
+{
+	"frame": {"x":486,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-9.png":
+{
+	"frame": {"x":486,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-10.png":
+{
+	"frame": {"x":0,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-11.png":
+{
+	"frame": {"x":0,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-12.png":
+{
+	"frame": {"x":54,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-13.png":
+{
+	"frame": {"x":54,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-14.png":
+{
+	"frame": {"x":108,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-15.png":
+{
+	"frame": {"x":162,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-16.png":
+{
+	"frame": {"x":162,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-17.png":
+{
+	"frame": {"x":216,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-18.png":
+{
+	"frame": {"x":270,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-19.png":
+{
+	"frame": {"x":270,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-20.png":
+{
+	"frame": {"x":270,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-21.png":
+{
+	"frame": {"x":270,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-22.png":
+{
+	"frame": {"x":270,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-23.png":
+{
+	"frame": {"x":270,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-24.png":
+{
+	"frame": {"x":270,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-25.png":
+{
+	"frame": {"x":270,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-26.png":
+{
+	"frame": {"x":324,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-27.png":
+{
+	"frame": {"x":324,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-28.png":
+{
+	"frame": {"x":324,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-29.png":
+{
+	"frame": {"x":324,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-30.png":
+{
+	"frame": {"x":324,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-31.png":
+{
+	"frame": {"x":324,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-32.png":
+{
+	"frame": {"x":324,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-33.png":
+{
+	"frame": {"x":324,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-34.png":
+{
+	"frame": {"x":324,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-35.png":
+{
+	"frame": {"x":324,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-36.png":
+{
+	"frame": {"x":324,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-37.png":
+{
+	"frame": {"x":324,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-38.png":
+{
+	"frame": {"x":324,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-39.png":
+{
+	"frame": {"x":324,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-40.png":
+{
+	"frame": {"x":324,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-41.png":
+{
+	"frame": {"x":324,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-42.png":
+{
+	"frame": {"x":378,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-43.png":
+{
+	"frame": {"x":378,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-44.png":
+{
+	"frame": {"x":378,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-45.png":
+{
+	"frame": {"x":378,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-46.png":
+{
+	"frame": {"x":378,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-47.png":
+{
+	"frame": {"x":378,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-48.png":
+{
+	"frame": {"x":378,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-49.png":
+{
+	"frame": {"x":378,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-50.png":
+{
+	"frame": {"x":378,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-51.png":
+{
+	"frame": {"x":378,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-52.png":
+{
+	"frame": {"x":378,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-53.png":
+{
+	"frame": {"x":378,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-54.png":
+{
+	"frame": {"x":378,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-55.png":
+{
+	"frame": {"x":378,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-56.png":
+{
+	"frame": {"x":378,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-57.png":
+{
+	"frame": {"x":378,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-58.png":
+{
+	"frame": {"x":378,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-59.png":
+{
+	"frame": {"x":432,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-60.png":
+{
+	"frame": {"x":432,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-61.png":
+{
+	"frame": {"x":432,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-62.png":
+{
+	"frame": {"x":432,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-63.png":
+{
+	"frame": {"x":432,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-64.png":
+{
+	"frame": {"x":432,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-65.png":
+{
+	"frame": {"x":432,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-66.png":
+{
+	"frame": {"x":432,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-67.png":
+{
+	"frame": {"x":432,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-68.png":
+{
+	"frame": {"x":432,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-69.png":
+{
+	"frame": {"x":432,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-70.png":
+{
+	"frame": {"x":432,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-71.png":
+{
+	"frame": {"x":432,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-72.png":
+{
+	"frame": {"x":432,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-73.png":
+{
+	"frame": {"x":432,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-74.png":
+{
+	"frame": {"x":432,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-75.png":
+{
+	"frame": {"x":486,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-76.png":
+{
+	"frame": {"x":486,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-77.png":
+{
+	"frame": {"x":486,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-78.png":
+{
+	"frame": {"x":486,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-79.png":
+{
+	"frame": {"x":486,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-80.png":
+{
+	"frame": {"x":486,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-81.png":
+{
+	"frame": {"x":486,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-82.png":
+{
+	"frame": {"x":486,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-83.png":
+{
+	"frame": {"x":486,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-84.png":
+{
+	"frame": {"x":486,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-85.png":
+{
+	"frame": {"x":486,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-86.png":
+{
+	"frame": {"x":486,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-87.png":
+{
+	"frame": {"x":486,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-88.png":
+{
+	"frame": {"x":486,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-89.png":
+{
+	"frame": {"x":486,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-90.png":
+{
+	"frame": {"x":486,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-91.png":
+{
+	"frame": {"x":540,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-92.png":
+{
+	"frame": {"x":540,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-93.png":
+{
+	"frame": {"x":540,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-94.png":
+{
+	"frame": {"x":540,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-95.png":
+{
+	"frame": {"x":540,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-96.png":
+{
+	"frame": {"x":540,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-97.png":
+{
+	"frame": {"x":540,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-98.png":
+{
+	"frame": {"x":540,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-99.png":
+{
+	"frame": {"x":540,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-100.png":
+{
+	"frame": {"x":0,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-101.png":
+{
+	"frame": {"x":0,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-102.png":
+{
+	"frame": {"x":0,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-103.png":
+{
+	"frame": {"x":0,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-104.png":
+{
+	"frame": {"x":0,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-105.png":
+{
+	"frame": {"x":0,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-106.png":
+{
+	"frame": {"x":0,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-107.png":
+{
+	"frame": {"x":0,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-108.png":
+{
+	"frame": {"x":0,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-109.png":
+{
+	"frame": {"x":0,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-110.png":
+{
+	"frame": {"x":0,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-111.png":
+{
+	"frame": {"x":0,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-112.png":
+{
+	"frame": {"x":0,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-113.png":
+{
+	"frame": {"x":0,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-114.png":
+{
+	"frame": {"x":54,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-115.png":
+{
+	"frame": {"x":54,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-116.png":
+{
+	"frame": {"x":54,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-117.png":
+{
+	"frame": {"x":54,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-118.png":
+{
+	"frame": {"x":54,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-119.png":
+{
+	"frame": {"x":54,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-120.png":
+{
+	"frame": {"x":54,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-121.png":
+{
+	"frame": {"x":54,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-122.png":
+{
+	"frame": {"x":54,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-123.png":
+{
+	"frame": {"x":54,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-124.png":
+{
+	"frame": {"x":54,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-125.png":
+{
+	"frame": {"x":54,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-126.png":
+{
+	"frame": {"x":54,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-127.png":
+{
+	"frame": {"x":54,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-128.png":
+{
+	"frame": {"x":54,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-129.png":
+{
+	"frame": {"x":54,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-130.png":
+{
+	"frame": {"x":108,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-131.png":
+{
+	"frame": {"x":108,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-132.png":
+{
+	"frame": {"x":108,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-133.png":
+{
+	"frame": {"x":108,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-134.png":
+{
+	"frame": {"x":108,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-135.png":
+{
+	"frame": {"x":108,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-136.png":
+{
+	"frame": {"x":108,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-137.png":
+{
+	"frame": {"x":108,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-138.png":
+{
+	"frame": {"x":108,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-139.png":
+{
+	"frame": {"x":108,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-140.png":
+{
+	"frame": {"x":108,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-141.png":
+{
+	"frame": {"x":108,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-142.png":
+{
+	"frame": {"x":108,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-143.png":
+{
+	"frame": {"x":108,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-144.png":
+{
+	"frame": {"x":108,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-145.png":
+{
+	"frame": {"x":108,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-146.png":
+{
+	"frame": {"x":108,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-147.png":
+{
+	"frame": {"x":162,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-148.png":
+{
+	"frame": {"x":162,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-149.png":
+{
+	"frame": {"x":162,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-150.png":
+{
+	"frame": {"x":162,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-151.png":
+{
+	"frame": {"x":162,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-152.png":
+{
+	"frame": {"x":162,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-153.png":
+{
+	"frame": {"x":162,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-154.png":
+{
+	"frame": {"x":162,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-155.png":
+{
+	"frame": {"x":162,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-156.png":
+{
+	"frame": {"x":162,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-157.png":
+{
+	"frame": {"x":162,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-158.png":
+{
+	"frame": {"x":162,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-159.png":
+{
+	"frame": {"x":162,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-160.png":
+{
+	"frame": {"x":162,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-161.png":
+{
+	"frame": {"x":162,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-162.png":
+{
+	"frame": {"x":162,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-163.png":
+{
+	"frame": {"x":216,"y":0,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-164.png":
+{
+	"frame": {"x":216,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-165.png":
+{
+	"frame": {"x":216,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-166.png":
+{
+	"frame": {"x":216,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-167.png":
+{
+	"frame": {"x":216,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-168.png":
+{
+	"frame": {"x":216,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-169.png":
+{
+	"frame": {"x":216,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-170.png":
+{
+	"frame": {"x":216,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-171.png":
+{
+	"frame": {"x":216,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-172.png":
+{
+	"frame": {"x":216,"y":540,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-173.png":
+{
+	"frame": {"x":216,"y":594,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-174.png":
+{
+	"frame": {"x":216,"y":648,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-175.png":
+{
+	"frame": {"x":216,"y":702,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-176.png":
+{
+	"frame": {"x":216,"y":756,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-177.png":
+{
+	"frame": {"x":216,"y":810,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-178.png":
+{
+	"frame": {"x":216,"y":864,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-179.png":
+{
+	"frame": {"x":216,"y":918,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-180.png":
+{
+	"frame": {"x":270,"y":54,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-181.png":
+{
+	"frame": {"x":270,"y":108,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-182.png":
+{
+	"frame": {"x":270,"y":162,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-183.png":
+{
+	"frame": {"x":270,"y":216,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-184.png":
+{
+	"frame": {"x":270,"y":270,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-185.png":
+{
+	"frame": {"x":270,"y":324,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-186.png":
+{
+	"frame": {"x":270,"y":378,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-187.png":
+{
+	"frame": {"x":270,"y":432,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+"emoji-spritesheet-188.png":
+{
+	"frame": {"x":270,"y":486,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+}},
+"animations": {
+	"emoji-spritesheet": ["emoji-spritesheet-0.png","emoji-spritesheet-1.png","emoji-spritesheet-2.png","emoji-spritesheet-3.png","emoji-spritesheet-4.png","emoji-spritesheet-5.png","emoji-spritesheet-6.png","emoji-spritesheet-7.png","emoji-spritesheet-8.png","emoji-spritesheet-9.png","emoji-spritesheet-10.png","emoji-spritesheet-11.png","emoji-spritesheet-12.png","emoji-spritesheet-13.png","emoji-spritesheet-14.png","emoji-spritesheet-15.png","emoji-spritesheet-16.png","emoji-spritesheet-17.png","emoji-spritesheet-18.png","emoji-spritesheet-19.png","emoji-spritesheet-20.png","emoji-spritesheet-21.png","emoji-spritesheet-22.png","emoji-spritesheet-23.png","emoji-spritesheet-24.png","emoji-spritesheet-25.png","emoji-spritesheet-26.png","emoji-spritesheet-27.png","emoji-spritesheet-28.png","emoji-spritesheet-29.png","emoji-spritesheet-30.png","emoji-spritesheet-31.png","emoji-spritesheet-32.png","emoji-spritesheet-33.png","emoji-spritesheet-34.png","emoji-spritesheet-35.png","emoji-spritesheet-36.png","emoji-spritesheet-37.png","emoji-spritesheet-38.png","emoji-spritesheet-39.png","emoji-spritesheet-40.png","emoji-spritesheet-41.png","emoji-spritesheet-42.png","emoji-spritesheet-43.png","emoji-spritesheet-44.png","emoji-spritesheet-45.png","emoji-spritesheet-46.png","emoji-spritesheet-47.png","emoji-spritesheet-48.png","emoji-spritesheet-49.png","emoji-spritesheet-50.png","emoji-spritesheet-51.png","emoji-spritesheet-52.png","emoji-spritesheet-53.png","emoji-spritesheet-54.png","emoji-spritesheet-55.png","emoji-spritesheet-56.png","emoji-spritesheet-57.png","emoji-spritesheet-58.png","emoji-spritesheet-59.png","emoji-spritesheet-60.png","emoji-spritesheet-61.png","emoji-spritesheet-62.png","emoji-spritesheet-63.png","emoji-spritesheet-64.png","emoji-spritesheet-65.png","emoji-spritesheet-66.png","emoji-spritesheet-67.png","emoji-spritesheet-68.png","emoji-spritesheet-69.png","emoji-spritesheet-70.png","emoji-spritesheet-71.png","emoji-spritesheet-72.png","emoji-spritesheet-73.png","emoji-spritesheet-74.png","emoji-spritesheet-75.png","emoji-spritesheet-76.png","emoji-spritesheet-77.png","emoji-spritesheet-78.png","emoji-spritesheet-79.png","emoji-spritesheet-80.png","emoji-spritesheet-81.png","emoji-spritesheet-82.png","emoji-spritesheet-83.png","emoji-spritesheet-84.png","emoji-spritesheet-85.png","emoji-spritesheet-86.png","emoji-spritesheet-87.png","emoji-spritesheet-88.png","emoji-spritesheet-89.png","emoji-spritesheet-90.png","emoji-spritesheet-91.png","emoji-spritesheet-92.png","emoji-spritesheet-93.png","emoji-spritesheet-94.png","emoji-spritesheet-95.png","emoji-spritesheet-96.png","emoji-spritesheet-97.png","emoji-spritesheet-98.png","emoji-spritesheet-99.png","emoji-spritesheet-100.png","emoji-spritesheet-101.png","emoji-spritesheet-102.png","emoji-spritesheet-103.png","emoji-spritesheet-104.png","emoji-spritesheet-105.png","emoji-spritesheet-106.png","emoji-spritesheet-107.png","emoji-spritesheet-108.png","emoji-spritesheet-109.png","emoji-spritesheet-110.png","emoji-spritesheet-111.png","emoji-spritesheet-112.png","emoji-spritesheet-113.png","emoji-spritesheet-114.png","emoji-spritesheet-115.png","emoji-spritesheet-116.png","emoji-spritesheet-117.png","emoji-spritesheet-118.png","emoji-spritesheet-119.png","emoji-spritesheet-120.png","emoji-spritesheet-121.png","emoji-spritesheet-122.png","emoji-spritesheet-123.png","emoji-spritesheet-124.png","emoji-spritesheet-125.png","emoji-spritesheet-126.png","emoji-spritesheet-127.png","emoji-spritesheet-128.png","emoji-spritesheet-129.png","emoji-spritesheet-130.png","emoji-spritesheet-131.png","emoji-spritesheet-132.png","emoji-spritesheet-133.png","emoji-spritesheet-134.png","emoji-spritesheet-135.png","emoji-spritesheet-136.png","emoji-spritesheet-137.png","emoji-spritesheet-138.png","emoji-spritesheet-139.png","emoji-spritesheet-140.png","emoji-spritesheet-141.png","emoji-spritesheet-142.png","emoji-spritesheet-143.png","emoji-spritesheet-144.png","emoji-spritesheet-145.png","emoji-spritesheet-146.png","emoji-spritesheet-147.png","emoji-spritesheet-148.png","emoji-spritesheet-149.png","emoji-spritesheet-150.png","emoji-spritesheet-151.png","emoji-spritesheet-152.png","emoji-spritesheet-153.png","emoji-spritesheet-154.png","emoji-spritesheet-155.png","emoji-spritesheet-156.png","emoji-spritesheet-157.png","emoji-spritesheet-158.png","emoji-spritesheet-159.png","emoji-spritesheet-160.png","emoji-spritesheet-161.png","emoji-spritesheet-162.png","emoji-spritesheet-163.png","emoji-spritesheet-164.png","emoji-spritesheet-165.png","emoji-spritesheet-166.png","emoji-spritesheet-167.png","emoji-spritesheet-168.png","emoji-spritesheet-169.png","emoji-spritesheet-170.png","emoji-spritesheet-171.png","emoji-spritesheet-172.png","emoji-spritesheet-173.png","emoji-spritesheet-174.png","emoji-spritesheet-175.png","emoji-spritesheet-176.png","emoji-spritesheet-177.png","emoji-spritesheet-178.png","emoji-spritesheet-179.png","emoji-spritesheet-180.png","emoji-spritesheet-181.png","emoji-spritesheet-182.png","emoji-spritesheet-183.png","emoji-spritesheet-184.png","emoji-spritesheet-185.png","emoji-spritesheet-186.png","emoji-spritesheet-187.png","emoji-spritesheet-188.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "emoji-spritesheet.png",
+	"format": "RGBA8888",
+	"size": {"w":594,"h":972},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:63e7d949fb50be730c54393966f52229:b59aa07576d9547c3bad78d6dfbd7218:90336e0f6a992cacd0356bdf48a18b12$"
+}
+}

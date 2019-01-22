@@ -1,39 +1,133 @@
-
 import * as PIXI from "pixi.js";
-import * as TWEEN from "@tweenjs/tween.js";
+import Button from "./UI/button"
+import Example1 from "./example1/index"
+import Example2 from "./example2/index"
+import IRunnableExample from "./IRunnableExample";
 
-class Example1 {
+
+class Main {
     private app: PIXI.Application;
+    private menuContainer: PIXI.Container;
+    private overlayContainer: PIXI.Container;
     private fpsMeter: PIXI.Text;
-    private stack: PIXI.Sprite[] = [];
-    private bottomStack: PIXI.Sprite[] = [];
-    private accumulatedTime: number = 0;
-    private lastTime: number = 0;
-    private animationCount: number = 0;
+    private runningExample: IRunnableExample;
+    private buttonExample1: Button;
+    private buttonExample2: Button;
+    private buttonExample3: Button;
+    private backButton: Button;
+    private loaded: boolean;
     private windowPad: number = 20;
-    private cardCount: number = 144;
-    private cardMargin: number = 3;
-    private animationFrequency: number = 1000;
-    private animationDuration: number = 2000;
-
-    private resize(): void {
-        this.app.renderer.resize(window.innerWidth - this.windowPad, window.innerHeight - this.windowPad); 
-        for(let sprite of this.bottomStack) {
-            sprite.y = this.getSpriteY(sprite);
-        }
-    }
-
-    private getSpriteY(sprite: PIXI.Sprite): number {
-        return window.innerHeight - this.windowPad - sprite.height;
-    }
+    private lastTime: number = 0;
 
     public start(): void {
         this.app = new PIXI.Application({autoResize: true, backgroundColor: 0x111111});
+        this.menuContainer = new PIXI.Container();
+        this.overlayContainer = new PIXI.Container();
         this.fpsMeter = this.createFpsMeter(); 
-        this.resize();
+        this.overlayContainer.addChild(this.fpsMeter);
+        this.app.stage.addChild(this.overlayContainer);
         window.addEventListener('resize', this.resize.bind(this));
         document.getElementById("app").appendChild(this.app.view);
+        this.resize();
         this.load();
+    }
+
+    private load() {
+        PIXI.loader.add("assets/button.png")
+                   .add("assets/card.png")
+                   .add("assets/emoji-spritesheet.json")
+                   .load(this.setupScene.bind(this))
+    }
+
+    private setupScene()
+    {
+        this.loaded = true;
+        this.buttonExample1 = new Button("Example 1", this.startExample1.bind(this));
+        this.buttonExample2 = new Button("Example 2", this.startExample2.bind(this));
+        this.buttonExample3 = new Button("Example 3", this.startExample3.bind(this));
+        this.menuContainer.addChild(this.buttonExample1.getDisplayableObject());
+        this.menuContainer.addChild(this.buttonExample2.getDisplayableObject());
+        this.menuContainer.addChild(this.buttonExample3.getDisplayableObject());
+        this.backButton = new Button("Back", this.quitExample.bind(this));
+        this.updateButtonsPosition();
+        this.loadMenu();
+        requestAnimationFrame(this.gameLoop.bind(this));
+    }
+
+    private updateButtonsPosition()
+    {
+        this.buttonExample1.setPosition(new PIXI.Point(this.app.renderer.width/2, 
+                                                       this.app.renderer.height/4));
+        this.buttonExample2.setPosition(new PIXI.Point(this.app.renderer.width/2, 
+                                                       this.app.renderer.height*2/4));
+        this.buttonExample3.setPosition(new PIXI.Point(this.app.renderer.width/2, 
+                                                       this.app.renderer.height*3/4));
+        this.backButton.setPosition(new PIXI.Point(this.app.renderer.width - this.backButton.getWidth()/2, 
+                                                   this.app.renderer.height - this.backButton.getHeight()/2));
+    }
+
+    private gameLoop(time: number): void {
+        requestAnimationFrame(this.gameLoop.bind(this));
+        const deltaTime = time - this.lastTime;
+        this.lastTime = time;
+        this.updateFps(deltaTime);
+    }
+
+    private updateFps(deltaTime: number) {
+        const fps = 1000/deltaTime;
+        this.fpsMeter.text = `${fps.toFixed(2)} fps`;
+        this.fpsMeter.x = this.app.renderer.width - this.fpsMeter.width;
+    }
+
+    private startExample1(): void {
+        console.log("entrou");
+        this.unloadMenu();
+        this.runningExample = new Example1();
+        this.runningExample.start(this.app);
+        this.refreshOverlay();
+    }
+
+    private startExample2(): void {
+        console.log("entrou");
+        this.unloadMenu();
+        this.runningExample = new Example2();
+        this.runningExample.start(this.app);
+        this.refreshOverlay();
+    }
+
+    private startExample3(): void {
+        console.log("entrou");
+        this.unloadMenu();
+        this.runningExample = new Example1();
+        this.runningExample.start(this.app);
+        this.refreshOverlay();
+    }
+
+    private unloadMenu(): void {
+        this.app.stage.removeChild(this.menuContainer);
+        this.overlayContainer.addChild(this.backButton.getDisplayableObject());
+    }
+
+    private loadMenu(): void {
+        this.app.stage.addChild(this.menuContainer);
+        this.overlayContainer.removeChild(this.backButton.getDisplayableObject());
+    }
+
+    private refreshOverlay(): void {
+        this.app.stage.removeChild(this.overlayContainer);
+        this.app.stage.addChild(this.overlayContainer);
+    }
+
+    private quitExample(): void {
+        this.runningExample.quit();
+        this.loadMenu();
+    }
+
+    private resize(): void {
+        this.app.renderer.resize(window.innerWidth - this.windowPad, window.innerHeight - this.windowPad); 
+        if (this.loaded) {
+            this.updateButtonsPosition();
+        }
     }
 
     private createFpsMeter(): PIXI.Text {
@@ -49,73 +143,8 @@ class Example1 {
 
         return meter;
     }
-
-    private load() {
-        PIXI.loader.add("assets/card.png").load(this.setupScene.bind(this))
-    }
-
-    private setupScene() {
-        const cardTexture = PIXI.loader.resources["assets/card.png"].texture;
-        let container = new PIXI.Container();
-        for(let i = 0; i < this.cardCount; i++)
-        {
-            let sprite = new PIXI.Sprite(cardTexture);
-            sprite.x = i*this.cardMargin;
-            sprite.scale = new PIXI.Point(0.6,0.6);
-            this.app.stage.addChild(sprite);
-            this.stack.push(sprite);
-        }
-        this.app.stage.addChild(this.fpsMeter);
-        requestAnimationFrame(this.gameLoop.bind(this));
-    }
-
-    private gameLoop(time: number) {
-        requestAnimationFrame(this.gameLoop.bind(this));
-        const deltaTime = time - this.lastTime;
-        this.lastTime = time;
-        this.updateFps(deltaTime);
-        this.accumulatedTime += deltaTime;
-        if (this.accumulatedTime >= this.animationFrequency && this.stack.length > 0) {
-            const sprite = this.stack.pop();
-            
-            this.moveCards(sprite,this.animationCount*this.cardMargin,this.getSpriteY(sprite));
-            this.animationCount++;
-            this.accumulatedTime -= this.animationFrequency;
-        }
-        
-        TWEEN.update(time);
-    }
-
-    private updateFps(deltaTime: number) {
-        const fps = 1000/deltaTime;
-        this.fpsMeter.text = `${fps.toFixed(2)} fps`;
-        this.fpsMeter.x = this.app.renderer.width - this.fpsMeter.width;
-    }
-
-    private moveCards(sprite: PIXI.Sprite, posX: number, posY: number) {
-        this.reorderCard(sprite);
-        let coords = {x:0.0, y:0.0};
-        const initialPos = {x:sprite.x, y:sprite.y};
-        const tween = new TWEEN.Tween(coords)
-                            .to({x: 1.0, y: 1.0}, this.animationDuration)
-                            .onUpdate(() => { 
-                                sprite.x = this.lerp(initialPos.x,posX,coords.x); 
-                                sprite.y = this.lerp(initialPos.y,this.getSpriteY(sprite),coords.y); 
-                            })
-                            .easing(TWEEN.Easing.Quadratic.Out)
-                            .onComplete(() => {this.bottomStack.push(sprite);})
-                            .start();
-    }
-
-    private lerp(a: number, b: number, f: number) : number {
-        return a + f * (b - a);
-    }
-    
-    private reorderCard(sprite: PIXI.Sprite) {
-        this.app.stage.removeChild(sprite);
-        this.app.stage.addChild(sprite);
-    }
 }
 
-const example = new Example1();
-example.start();
+const main = new Main();
+main.start();
+//main.startExample1();
