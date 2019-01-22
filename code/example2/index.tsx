@@ -16,9 +16,7 @@ export default class Example2 implements IRunnableExample{
         this.hasQuit = false;
         this.container = new PIXI.Container();
         this.app.stage.addChild(this.container);
-        this.resize();
         this.setupScene();
-        window.addEventListener('resize', this.resize.bind(this));
     }
 
     public quit(): void {
@@ -42,7 +40,6 @@ export default class Example2 implements IRunnableExample{
             if (rand == 0) {
                 const txt = this.getRandomText();
                 txt.x = totalWidth;
-                //txt.y = 100;
                 totalWidth += txt.width + this.margin;
                 txts.push(txt);
                 container.addChild(txt);
@@ -115,7 +112,6 @@ export default class Example2 implements IRunnableExample{
 
     private setupScene() {
         this.spawnObject();
-        console.log("setupscene ok");
         requestAnimationFrame(this.gameLoop.bind(this));
     }
     
@@ -133,6 +129,9 @@ export default class Example2 implements IRunnableExample{
 
     private destroyContainer(container: PIXI.Container)
     {
+        if (this.hasQuit) {
+            return;
+        }
         this.container.removeChild(container);
         container.destroy();
     }
@@ -156,9 +155,5 @@ export default class Example2 implements IRunnableExample{
         }
                 
         TWEEN.update(time);
-    }
-
-    private resize(): void {
-
     }
 }
