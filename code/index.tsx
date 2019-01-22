@@ -2,7 +2,7 @@
 import * as PIXI from "pixi.js";
 import * as TWEEN from "@tweenjs/tween.js";
 
-class Task1 {
+class Example1 {
     private app: PIXI.Application;
     private stack: PIXI.Sprite[];
     private fpsMeter: PIXI.Text;
@@ -100,5 +100,5 @@ class Task1 {
     }
 }
 
-const task = new Task1();
-task.start();
+const example = new Example1();
+example.start();
