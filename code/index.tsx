@@ -12,7 +12,7 @@ class Task1 {
     private moveCardToYPos: number = 0;
     private windowPad: number = 20;
     private cardCount: number = 144;
-    private cardMargin: number = 10;
+    private cardMargin: number = 3;
     private animationFrequency: number = 1000;
     private animationDuration: number = 2000;
 
@@ -55,6 +55,7 @@ class Task1 {
         {
             let sprite = new PIXI.Sprite(cardTexture);
             sprite.x = i*this.cardMargin;
+            sprite.scale = new PIXI.Point(0.6,0.6);
             this.app.stage.addChild(sprite);
             this.stack.push(sprite);
         }
