@@ -11,7 +11,6 @@ module.exports = {
         port: 8080,
         contentBase: "./public"
     },
-    devtool: "source-map",
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".json"],
         alias: {
