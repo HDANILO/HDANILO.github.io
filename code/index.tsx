@@ -4,12 +4,12 @@ import * as TWEEN from "@tweenjs/tween.js";
 
 class Example1 {
     private app: PIXI.Application;
-    private stack: PIXI.Sprite[];
     private fpsMeter: PIXI.Text;
+    private stack: PIXI.Sprite[] = [];
+    private bottomStack: PIXI.Sprite[] = [];
     private accumulatedTime: number = 0;
     private lastTime: number = 0;
     private animationCount: number = 0;
-    private moveCardToYPos: number = 0;
     private windowPad: number = 20;
     private cardCount: number = 144;
     private cardMargin: number = 3;
@@ -18,13 +18,19 @@ class Example1 {
 
     private resize(): void {
         this.app.renderer.resize(window.innerWidth - this.windowPad, window.innerHeight - this.windowPad); 
+        for(let sprite of this.bottomStack) {
+            sprite.y = this.getSpriteY(sprite);
+        }
+    }
+
+    private getSpriteY(sprite: PIXI.Sprite): number {
+        return window.innerHeight - this.windowPad - sprite.height;
     }
 
     public start(): void {
         this.app = new PIXI.Application({autoResize: true, backgroundColor: 0x111111});
         this.fpsMeter = this.createFpsMeter(); 
         this.resize();
-        this.stack = [];
         window.addEventListener('resize', this.resize.bind(this));
         document.getElementById("app").appendChild(this.app.view);
         this.load();
@@ -60,7 +66,6 @@ class Example1 {
             this.stack.push(sprite);
         }
         this.app.stage.addChild(this.fpsMeter);
-        this.moveCardToYPos = window.innerHeight - this.windowPad - this.stack[0].height;
         requestAnimationFrame(this.gameLoop.bind(this));
     }
 
@@ -72,7 +77,8 @@ class Example1 {
         this.accumulatedTime += deltaTime;
         if (this.accumulatedTime >= this.animationFrequency && this.stack.length > 0) {
             const sprite = this.stack.pop();
-            this.moveCards(sprite,this.animationCount*this.cardMargin,this.moveCardToYPos);
+            
+            this.moveCards(sprite,this.animationCount*this.cardMargin,this.getSpriteY(sprite));
             this.animationCount++;
             this.accumulatedTime -= this.animationFrequency;
         }
@@ -88,12 +94,23 @@ class Example1 {
 
     private moveCards(sprite: PIXI.Sprite, posX: number, posY: number) {
         this.reorderCard(sprite);
-        const tween = new TWEEN.Tween(sprite)
-                            .to({x: posX, y: posY}, this.animationDuration)
+        let coords = {x:0.0, y:0.0};
+        const initialPos = {x:sprite.x, y:sprite.y};
+        const tween = new TWEEN.Tween(coords)
+                            .to({x: 1.0, y: 1.0}, this.animationDuration)
+                            .onUpdate(() => { 
+                                sprite.x = this.lerp(initialPos.x,posX,coords.x); 
+                                sprite.y = this.lerp(initialPos.y,this.getSpriteY(sprite),coords.y); 
+                            })
                             .easing(TWEEN.Easing.Quadratic.Out)
+                            .onComplete(() => {this.bottomStack.push(sprite);})
                             .start();
     }
 
+    private lerp(a: number, b: number, f: number) : number {
+        return a + f * (b - a);
+    }
+    
     private reorderCard(sprite: PIXI.Sprite) {
         this.app.stage.removeChild(sprite);
         this.app.stage.addChild(sprite);
