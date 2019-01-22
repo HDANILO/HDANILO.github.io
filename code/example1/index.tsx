@@ -16,11 +16,12 @@ export default class Example1 implements IRunnableExample{
     private hasQuit: boolean;
     private animationFrequency: number = 1000;
     private animationDuration: number = 2000;
+    private tweens: TWEEN.Tween[] = [];
 
     public start(app: PIXI.Application): void {
         this.app = app;
-        this.hasQuit = false;
         this.container = new PIXI.Container();
+        this.hasQuit = false;
         this.app.stage.addChild(this.container);
         this.resize();
         this.setupScene();
@@ -32,6 +33,9 @@ export default class Example1 implements IRunnableExample{
             return;
         }
         this.hasQuit = true;
+        for(let tween of this.tweens) {
+            tween.stop();
+        }
         this.app.stage.removeChild(this.container);
         this.container.destroy();
         this.container = undefined;
@@ -87,6 +91,7 @@ export default class Example1 implements IRunnableExample{
                             .easing(TWEEN.Easing.Quadratic.Out)
                             .onComplete(() => {this.bottomStack.push(sprite);})
                             .start();
+        this.tweens.push(tween);
     }
     
     private reorderCard(sprite: PIXI.Sprite) {

@@ -10,11 +10,12 @@ export default class Example2 implements IRunnableExample{
     private accumulatedTime: number = 0;
     private hasQuit: boolean;
     private margin: number = 5;
+    private tweens: TWEEN.Tween[] = [];
 
     public start(app: PIXI.Application): void {
         this.app = app;
-        this.hasQuit = false;
         this.container = new PIXI.Container();
+        this.hasQuit = false;
         this.app.stage.addChild(this.container);
         this.setupScene();
     }
@@ -24,6 +25,9 @@ export default class Example2 implements IRunnableExample{
             return;
         }
         this.hasQuit = true;
+        for(let tween of this.tweens) {
+            tween.stop();
+        }
         this.app.stage.removeChild(this.container);
         this.container.destroy();
         this.container = undefined;
@@ -120,18 +124,16 @@ export default class Example2 implements IRunnableExample{
         objContainer.x = this.app.renderer.width/2 - objContainer.width/2;
         objContainer.y = 0;
         this.container.addChild(objContainer);
-        new TWEEN.Tween(objContainer)
-                 .to({y: this.app.renderer.height - objContainer.height}, 15000)
-                 .easing(TWEEN.Easing.Cubic.Out)
-                 .onComplete(() => {this.destroyContainer(objContainer); })
-                 .start();
+        const tween = new TWEEN.Tween(objContainer)
+        .to({y: this.app.renderer.height - objContainer.height}, 15000)
+        .easing(TWEEN.Easing.Cubic.Out)
+        .onComplete(() => {this.destroyContainer(objContainer); })
+        .start();
+        this.tweens.push(tween);
     }
 
     private destroyContainer(container: PIXI.Container)
     {
-        if (this.hasQuit) {
-            return;
-        }
         this.container.removeChild(container);
         container.destroy();
     }

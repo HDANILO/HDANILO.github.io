@@ -80,7 +80,6 @@ class Main {
     }
 
     private startExample1(): void {
-        console.log("entrou");
         this.unloadMenu();
         this.runningExample = new Example1();
         this.runningExample.start(this.app);
@@ -88,7 +87,6 @@ class Main {
     }
 
     private startExample2(): void {
-        console.log("entrou");
         this.unloadMenu();
         this.runningExample = new Example2();
         this.runningExample.start(this.app);
@@ -96,7 +94,6 @@ class Main {
     }
 
     private startExample3(): void {
-        console.log("entrou");
         this.unloadMenu();
         this.runningExample = new Example1();
         this.runningExample.start(this.app);
