@@ -41,7 +41,6 @@ class Main {
                    .add("assets/smoke.png")
                    .add("assets/fireParticle.json")
                    .add("assets/smokeParticle.json")
-                   .add("assets/phrases.json")
                    .load(this.setupScene.bind(this))
     }
 

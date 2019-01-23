@@ -11,6 +11,23 @@ export default class Example2 implements IRunnableExample{
     private hasQuit: boolean;
     private margin: number = 5;
     private tweens: TWEEN.Tween[] = [];
+    //had to move from a file in assets folder to here, looks like 
+    //github didn't allow me to publish it somehow
+    private phrases: string[] = [
+        "Hi", "I hope you like my code", "Lorem Ipsum",
+        "No guts, no story", "My life is a message",
+        "Keep going, be all in", "Dream big, pray bigger",
+        "Stay hungry, stay foolish", "Be happy", "You're amazing",
+        "Enjoy today", "Take it easy",
+        "Life is just a chance to grow a soul",
+        "Nothing will work unless you do",
+        "If you judge people you have no time to love them",
+        "Don't raise your voice. Improve your argument",
+        "Do you really wanna go back in time?",
+        "Mathematics is the music of reason",
+        "Give life back to music",
+        "The good life is inspired by love and guided by knowledge"
+    ];
 
     public start(app: PIXI.Application): void {
         this.app = app;
@@ -70,8 +87,7 @@ export default class Example2 implements IRunnableExample{
     }
 
     private getRandomText(): PIXI.Text {
-        const randomText =  PIXI.loader.resources["assets/phrases.json"].data;
-        const txt = randomText[this.getRandom(0,randomText.length-1)];
+        const txt = this.phrases[this.getRandom(0,this.phrases.length-1)];
         return new PIXI.Text(txt,this.getFontStyle());
     }
 
