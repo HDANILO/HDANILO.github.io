@@ -8,8 +8,11 @@ export default class Button {
         this.sprite = new PIXI.Sprite(PIXI.loader.resources["assets/button.png"].texture);
         this.sprite.interactive = true;
         this.sprite.on("click", this.onClick.bind(this));
+        this.sprite.on("tap", this.onClick.bind(this));
         this.sprite.on("mouseover", this.onMouseOver.bind(this));
         this.sprite.on("mouseout", this.onMouseOut.bind(this));
+        this.sprite.on("touchstart", this.onMouseOver.bind(this))
+        this.sprite.on("touchend", this.onMouseOut.bind(this))
         this.text = new PIXI.Text(text, {
             fill: "white",
             fontFamily: "\"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif",
