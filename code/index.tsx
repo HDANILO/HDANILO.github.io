@@ -38,6 +38,9 @@ class Main {
                    .add("assets/card.png")
                    .add("assets/emoji-spritesheet.json")
                    .add("assets/fire.png")
+                   .add("assets/smoke.png")
+                   .add("assets/fireParticle.json")
+                   .add("assets/smokeParticle.json")
                    .load(this.setupScene.bind(this))
     }
 
