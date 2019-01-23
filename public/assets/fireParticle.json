@@ -49,9 +49,9 @@
         "max": 1.2
     },
     "blendMode": "add",
-    "frequency": 0.01,
+    "frequency": 0.015,
     "emitterLifetime": -1,
-    "maxParticles": 200,
+    "maxParticles": 100,
     "pos": {
         "x": 0,
         "y": 0
