@@ -2,6 +2,7 @@ import * as PIXI from "pixi.js";
 import Button from "./UI/button"
 import Example1 from "./example1/index"
 import Example2 from "./example2/index"
+import Example3 from "./example3/index"
 import IRunnableExample from "./IRunnableExample";
 
 
@@ -36,6 +37,7 @@ class Main {
         PIXI.loader.add("assets/button.png")
                    .add("assets/card.png")
                    .add("assets/emoji-spritesheet.json")
+                   .add("assets/fire.png")
                    .load(this.setupScene.bind(this))
     }
 
@@ -62,8 +64,8 @@ class Main {
                                                        this.app.renderer.height*2/4));
         this.buttonExample3.setPosition(new PIXI.Point(this.app.renderer.width/2, 
                                                        this.app.renderer.height*3/4));
-        this.backButton.setPosition(new PIXI.Point(this.app.renderer.width - this.backButton.getWidth()/2, 
-                                                   this.app.renderer.height - this.backButton.getHeight()/2));
+        this.backButton.setPosition(new PIXI.Point(this.app.renderer.width - this.backButton.getWidth()/2 - 10, 
+                                                   this.app.renderer.height - this.backButton.getHeight()/2 - 10));
     }
 
     private gameLoop(time: number): void {
@@ -95,7 +97,7 @@ class Main {
 
     private startExample3(): void {
         this.unloadMenu();
-        this.runningExample = new Example1();
+        this.runningExample = new Example3();
         this.runningExample.start(this.app);
         this.refreshOverlay();
     }
