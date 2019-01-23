@@ -39,7 +39,7 @@ export default class Example3 implements IRunnableExample{
         this.container = undefined;
     }
 
-    private setupScene() {
+    private setupScene(): void  {
         this.smokeParticleEmitter = this.createSmokeParticleEmitter();
         this.fireParticleEmitter = this.createFireParticleEmitter();
         
@@ -53,7 +53,7 @@ export default class Example3 implements IRunnableExample{
         requestAnimationFrame(this.gameLoop.bind(this));
     }
 
-    private removeEvents() {
+    private removeEvents(): void  {
         if (this.supportsTouchEvent()) {
             this.app.stage.removeListener("touchstart");
             this.app.stage.removeListener("touchmove");
@@ -62,7 +62,7 @@ export default class Example3 implements IRunnableExample{
         }
         
     }
-    private setupEvents() {
+    private setupEvents(): void  {
         if (this.supportsTouchEvent()) {
             this.app.stage.on("touchstart", this.updatePosition.bind(this));
             this.app.stage.on("touchmove", this.updatePosition.bind(this));
@@ -71,8 +71,7 @@ export default class Example3 implements IRunnableExample{
         }
     }
 
-    private updatePosition(interactionEvent: PIXI.interaction.InteractionEvent) {
-        
+    private updatePosition(interactionEvent: PIXI.interaction.InteractionEvent): void  {
         const position: PIXI.Point = interactionEvent.data.global;
         this.smokeParticleEmitter.spawnPos.x = position.x;
         this.smokeParticleEmitter.spawnPos.y = position.y;
@@ -88,29 +87,30 @@ export default class Example3 implements IRunnableExample{
         return this.app.renderer.plugins.interaction.supportsPointerEvents;
     }
     
-    private gameLoop(time: number) {
+    private gameLoop(time: number): void  {
         if (this.hasQuit) {
             return;
         }
+
         if (this.lastTime === 0) {
             this.lastTime = time;
         }
+        
         requestAnimationFrame(this.gameLoop.bind(this));
+
         const deltaTime = time - this.lastTime;
         this.lastTime = time;
         this.smokeParticleEmitter.update(deltaTime/1000);
-        this.fireParticleEmitter.update(deltaTime/1000);
-        
+        this.fireParticleEmitter.update(deltaTime/1000);        
     }
 
-    private createSmokeParticleEmitter() : Particle.Emitter {
+    private createSmokeParticleEmitter(): Particle.Emitter {
         return new Particle.Emitter(this.container, 
                                     PIXI.loader.resources["assets/smoke.png"].texture, 
                                     PIXI.loader.resources["assets/smokeParticle.json"].data);
     }
 
-
-    private createFireParticleEmitter() : Particle.Emitter {
+    private createFireParticleEmitter(): Particle.Emitter {
         return new Particle.Emitter(this.container, 
                                     PIXI.loader.resources["assets/fire.png"].texture, 
                                     PIXI.loader.resources["assets/fireParticle.json"].data);

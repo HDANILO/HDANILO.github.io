@@ -41,7 +41,7 @@ export default class Example1 implements IRunnableExample{
         this.container = undefined;
     }
 
-    private setupScene() {
+    private setupScene(): void  {
         const cardTexture = PIXI.loader.resources["assets/card.png"].texture;
         let container = new PIXI.Container();
         for(let i = 0; i < this.cardCount; i++)
@@ -55,7 +55,7 @@ export default class Example1 implements IRunnableExample{
         requestAnimationFrame(this.gameLoop.bind(this));
     }
 
-    private gameLoop(time: number) {
+    private gameLoop(time: number): void  {
         if (this.hasQuit) {
             return;
         }
@@ -78,7 +78,7 @@ export default class Example1 implements IRunnableExample{
         TWEEN.update(time);
     }
 
-    private moveCards(sprite: PIXI.Sprite, posX: number, posY: number) {
+    private moveCards(sprite: PIXI.Sprite, posX: number, posY: number): void  {
         this.reorderCard(sprite);
         let coords = {x:0.0, y:0.0};
         const initialPos = {x:sprite.x, y:sprite.y};
@@ -94,7 +94,7 @@ export default class Example1 implements IRunnableExample{
         this.tweens.push(tween);
     }
     
-    private reorderCard(sprite: PIXI.Sprite) {
+    private reorderCard(sprite: PIXI.Sprite): void  {
         this.container.removeChild(sprite);
         this.container.addChild(sprite);
     }

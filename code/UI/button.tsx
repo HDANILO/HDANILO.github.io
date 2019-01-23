@@ -1,18 +1,25 @@
-export default class Button {
-    private sprite: PIXI.Sprite;
+export default class Button extends PIXI.Sprite{
     private text: PIXI.Text;
     private onClickCallback: VoidFunction;
 
     constructor(text: string, onClick: VoidFunction) {
+        super(PIXI.loader.resources["assets/button.png"].texture);
         this.onClickCallback = onClick;
-        this.sprite = new PIXI.Sprite(PIXI.loader.resources["assets/button.png"].texture);
-        this.sprite.interactive = true;
-        this.sprite.on("click", this.onClick.bind(this));
-        this.sprite.on("tap", this.onClick.bind(this));
-        this.sprite.on("mouseover", this.onMouseOver.bind(this));
-        this.sprite.on("mouseout", this.onMouseOut.bind(this));
-        this.sprite.on("touchstart", this.onMouseOver.bind(this))
-        this.sprite.on("touchend", this.onMouseOut.bind(this))
+        this.interactive = true;
+        this.setupEvents();
+        this.setupText(text);
+    }
+
+    private setupEvents(): void {
+        this.on("click", this.onClick.bind(this));
+        this.on("tap", this.onClick.bind(this));
+        this.on("mouseover", this.onMouseOver.bind(this));
+        this.on("mouseout", this.onMouseOut.bind(this));
+        this.on("touchstart", this.onMouseOver.bind(this))
+        this.on("touchend", this.onMouseOut.bind(this))
+    }
+
+    private setupText(text: string): void {
         this.text = new PIXI.Text(text, {
             fill: "white",
             fontFamily: "\"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif",
@@ -20,14 +27,14 @@ export default class Button {
             lineJoin: "bevel",
             strokeThickness: 2
         });
-        this.text.x = this.sprite.width/2 - this.text.width/2;
-        this.text.y = this.sprite.height/2 - this.text.height/2;
-        this.sprite.addChild(this.text);
+        this.text.x = this.width/2 - this.text.width/2;
+        this.text.y = this.height/2 - this.text.height/2;
+        this.addChild(this.text);
     }
 
     public setPosition(position: PIXI.Point): void {
-        this.sprite.x = position.x - this.sprite.width/2;
-        this.sprite.y = position.y - this.sprite.height/2;
+        this.x = position.x - this.width/2;
+        this.y = position.y - this.height/2;
     }
 
     private onClick(displayableObject : PIXI.DisplayObject): void {
@@ -37,22 +44,10 @@ export default class Button {
     }
 
     private onMouseOver(displayableObject : PIXI.DisplayObject): void {
-        this.sprite.tint = 0xdddddd;
+        this.tint = 0xdddddd;
     }
 
     private onMouseOut(displayableObject : PIXI.DisplayObject): void {
-        this.sprite.tint = 0xffffff;
-    }
-
-    public getDisplayableObject(): PIXI.DisplayObject {
-        return this.sprite;
-    }
-
-    public getWidth(): number {
-        return this.sprite.width;
-    }
-
-    public getHeight(): number {
-        return this.sprite.height;
+        this.tint = 0xffffff;
     }
 }

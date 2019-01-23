@@ -24,8 +24,6 @@ class Main {
         this.app = new PIXI.Application({autoResize: true, backgroundColor: 0x111111});
         this.menuContainer = new PIXI.Container();
         this.overlayContainer = new PIXI.Container();
-        this.fpsMeter = this.createFpsMeter(); 
-        this.overlayContainer.addChild(this.fpsMeter);
         this.app.stage.addChild(this.overlayContainer);
         window.addEventListener('resize', this.resize.bind(this));
         document.getElementById("app").appendChild(this.app.view);
@@ -48,12 +46,14 @@ class Main {
     private setupScene()
     {
         this.loaded = true;
+        this.fpsMeter = this.createFpsMeter(); 
+        this.overlayContainer.addChild(this.fpsMeter);
         this.buttonExample1 = new Button("Example 1", this.startExample1.bind(this));
         this.buttonExample2 = new Button("Example 2", this.startExample2.bind(this));
         this.buttonExample3 = new Button("Example 3", this.startExample3.bind(this));
-        this.menuContainer.addChild(this.buttonExample1.getDisplayableObject());
-        this.menuContainer.addChild(this.buttonExample2.getDisplayableObject());
-        this.menuContainer.addChild(this.buttonExample3.getDisplayableObject());
+        this.menuContainer.addChild(this.buttonExample1);
+        this.menuContainer.addChild(this.buttonExample2);
+        this.menuContainer.addChild(this.buttonExample3);
         this.backButton = new Button("Back", this.quitExample.bind(this));
         this.updateButtonsPosition();
         this.loadMenu();
@@ -68,8 +68,8 @@ class Main {
                                                        this.app.renderer.height*2/4));
         this.buttonExample3.setPosition(new PIXI.Point(this.app.renderer.width/2, 
                                                        this.app.renderer.height*3/4));
-        this.backButton.setPosition(new PIXI.Point(this.app.renderer.width - this.backButton.getWidth()/2 - 10, 
-                                                   this.app.renderer.height - this.backButton.getHeight()/2 - 10));
+        this.backButton.setPosition(new PIXI.Point(this.app.renderer.width - this.backButton.width/2 - 15, 
+                                                   this.app.renderer.height - this.backButton.height/2 - 15));
     }
 
     private gameLoop(time: number): void {
@@ -108,12 +108,12 @@ class Main {
 
     private unloadMenu(): void {
         this.app.stage.removeChild(this.menuContainer);
-        this.overlayContainer.addChild(this.backButton.getDisplayableObject());
+        this.overlayContainer.addChild(this.backButton);
     }
 
     private loadMenu(): void {
         this.app.stage.addChild(this.menuContainer);
-        this.overlayContainer.removeChild(this.backButton.getDisplayableObject());
+        this.overlayContainer.removeChild(this.backButton);
     }
 
     private refreshOverlay(): void {
