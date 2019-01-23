@@ -70,7 +70,7 @@ export default class Example2 implements IRunnableExample{
     }
 
     private getRandomText(): PIXI.Text {
-        const randomText =  PIXI.loader.resources["assets/texts.json"].data;
+        const randomText =  PIXI.loader.resources["assets/phrases.json"].data;
         const txt = randomText[this.getRandom(0,randomText.length-1)];
         return new PIXI.Text(txt,this.getFontStyle());
     }
