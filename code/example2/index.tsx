@@ -50,11 +50,7 @@ export default class Example2 implements IRunnableExample{
             } else {
                 const image = this.getRandomImage();
                 image.x = totalWidth;
-                const scale = this.getRandomFloat(0.2,1);
-                image.scale.x = scale;
-                image.scale.y = scale;
-                image.anchor.x = 0;
-                image.anchor.y = 0;
+                
                 totalWidth += image.width + this.margin;
                 sprites.push(image);
                 container.addChild(image);
@@ -74,12 +70,20 @@ export default class Example2 implements IRunnableExample{
     }
 
     private getRandomText(): PIXI.Text {
-        const randomText = ["Hi", "I hope you like my code", 
-                            "Is it cold in berlin?", "Lorem Ipsum",
+        const randomText = ["Hi", "I hope you like my code", "Lorem Ipsum",
                             "No guts, no story", "My life is a message",
                             "Keep going, be all in", "Dream big, pray bigger",
                             "Stay hungry, stay foolish", "Be happy", "You're amazing",
-                            "Enjoy today", "Take it easy"]   
+                            "Enjoy today", "Take it easy",
+                            "Life is just a chance to grow a soul",
+                            "Nothing will work unless you do",
+                            "If you judge people you have no time to love them",
+                            "Don't raise your voice. Improve your argument",
+                            "Do you really wanna go back in time?",
+                            "Mathematics is the music of reason",
+                            "Give life back to music",
+                            "The good life is inspired by love and guided by knowledge"
+                        ]   
         const txt = randomText[this.getRandom(0,randomText.length-1)];
         return new PIXI.Text(txt,this.getFontStyle());
     }
@@ -91,7 +95,13 @@ export default class Example2 implements IRunnableExample{
             spriteId = this.getRandom(1,188);
             texture = PIXI.loader.resources["assets/emoji-spritesheet.json"].textures[`emoji-spritesheet-${spriteId}.png`];
         }
-        return new PIXI.Sprite(texture);
+        const sprite = new PIXI.Sprite(texture);
+        const scale = this.getRandomFloat(0.2,1);
+        sprite.scale.x = scale;
+        sprite.scale.y = scale;
+        sprite.anchor.x = 0;
+        sprite.anchor.y = 0;
+        return sprite;
     }
 
     private getRandom(min: number, max: number): number {
