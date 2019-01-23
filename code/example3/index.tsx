@@ -15,6 +15,8 @@ export default class Example3 implements IRunnableExample{
         this.app = app;
         this.container = new PIXI.Container();
         this.hasQuit = false;
+        this.app.stage.interactive = true;
+        
         this.app.stage.addChild(this.container);
         this.setupScene();
     }
@@ -24,6 +26,7 @@ export default class Example3 implements IRunnableExample{
             return;
         }
         this.hasQuit = true;
+        this.removeEvents();
         this.fireParticleEmitter.emit = false;
         this.smokeParticleEmitter.emit = false;
         this.fireParticleEmitter.destroy();
@@ -39,20 +42,50 @@ export default class Example3 implements IRunnableExample{
     private setupScene() {
         this.smokeParticleEmitter = this.createSmokeParticleEmitter();
         this.fireParticleEmitter = this.createFireParticleEmitter();
-        this.updatePosition();
+        
+        this.smokeParticleEmitter.spawnPos.x = this.app.renderer.width/2 - this.container.width/2;
+        this.smokeParticleEmitter.spawnPos.y = this.app.renderer.height - 80;
+        this.fireParticleEmitter.spawnPos.x = this.app.renderer.width/2 - this.container.width/2;
+        this.fireParticleEmitter.spawnPos.y = this.app.renderer.height - 80;
+        this.setupEvents();
         this.smokeParticleEmitter.emit = true;
         this.fireParticleEmitter.emit = true;
         requestAnimationFrame(this.gameLoop.bind(this));
     }
 
-
-    private updatePosition() {
-        const position : PIXI.Point = this.app.renderer.plugins.interaction.mouse.global;
+    private removeEvents() {
+        if (this.supportsTouchEvent()) {
+            this.app.stage.removeListener("touchstart");
+            this.app.stage.removeListener("touchmove");
+        } else if (this.supportsMouseEvent()) {
+            this.app.stage.removeListener("mousemove");
+        }
         
+    }
+    private setupEvents() {
+        if (this.supportsTouchEvent()) {
+            this.app.stage.on("touchstart", this.updatePosition.bind(this));
+            this.app.stage.on("touchmove", this.updatePosition.bind(this));
+        } else if (this.supportsMouseEvent()) {
+            this.app.stage.on("mousemove", this.updatePosition.bind(this));
+        }
+    }
+
+    private updatePosition(interactionEvent: PIXI.interaction.InteractionEvent) {
+        
+        const position: PIXI.Point = interactionEvent.data.global;
         this.smokeParticleEmitter.spawnPos.x = position.x;
         this.smokeParticleEmitter.spawnPos.y = position.y;
         this.fireParticleEmitter.spawnPos.x = position.x;
-        this.fireParticleEmitter.spawnPos.y = position.y;      
+        this.fireParticleEmitter.spawnPos.y = position.y;  
+    }
+
+    private supportsTouchEvent(): boolean {
+        return this.app.renderer.plugins.interaction.supportsTouchEvents;
+    }
+
+    private supportsMouseEvent(): boolean {
+        return this.app.renderer.plugins.interaction.supportsPointerEvents;
     }
     
     private gameLoop(time: number) {
@@ -68,7 +101,6 @@ export default class Example3 implements IRunnableExample{
         this.smokeParticleEmitter.update(deltaTime/1000);
         this.fireParticleEmitter.update(deltaTime/1000);
         
-        this.updatePosition();
     }
 
     private createSmokeParticleEmitter() : Particle.Emitter {

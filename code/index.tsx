@@ -29,6 +29,7 @@ class Main {
         this.app.stage.addChild(this.overlayContainer);
         window.addEventListener('resize', this.resize.bind(this));
         document.getElementById("app").appendChild(this.app.view);
+        this.printDebug();
         this.resize();
         this.load();
     }
@@ -144,6 +145,11 @@ class Main {
         meter.y = 0;
 
         return meter;
+    }
+
+    private printDebug(): void {
+        console.log(`Supports touch? ${this.app.renderer.plugins.interaction.supportsTouchEvents}`);
+        console.log(`Supports pointer? ${this.app.renderer.plugins.interaction.supportsPointerEvents}`);
     }
 }
 
