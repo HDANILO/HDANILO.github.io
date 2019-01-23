@@ -24,6 +24,10 @@ export default class Example3 implements IRunnableExample{
             return;
         }
         this.hasQuit = true;
+        this.fireParticleEmitter.emit = false;
+        this.smokeParticleEmitter.emit = false;
+        this.fireParticleEmitter.destroy();
+        this.smokeParticleEmitter.destroy();
         if (this.app.renderer.type === PIXI.RENDERER_TYPE.WEBGL) {
             this.app.renderer.plugins.sprite.sprites.length = 0;
         }
