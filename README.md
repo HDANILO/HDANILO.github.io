@@ -1,4 +1,4 @@
-# HDANILO.github.io
+# PIXI + Typescript playtest
 
 Here be dragons,
 
